@@ -31,6 +31,14 @@
     - No extensions, no exceptions
   * The best performing teams may be rewarded with extra points for the exam
 
+## Books
+
+  * Search Engines: Information Retrieval in Practice (Croft, Metzler, Strohman), Pearson, 2010.
+    - Free download from  http://ciir.cs.umass.edu/irbook/
+    - Chapters 1, 2, 4, 5, 7, 8
+  * Introduction to Data Mining  (Tan, Steinbach, Kumar), Pearson, 2006.
+    - Chapters: 1-5, 8
+
 ## Exam
 
   * Digital exam
