@@ -10,7 +10,7 @@ See [this page](General_info.md)
 | Week | Days | Lecture (Mon) | Practicum (Tue) | Lab (Wed) | Reading |
 | --- | --- | --- | --- | --- | --- |
 | Part I: IR ||||||
-| 34 | 21-23/09 | *no lecture* | Course intro; Search engine architecture and indexing | Setting up environment | |
+| 34 | 21-23/09 | *no lecture* | Course intro; Search engine architecture and indexing ([slides](https://speakerdeck.com/kbalog/2017-search-engine-architecture-and-indexing)) | Setting up environment | |
 | 35 | 28-29/09 | Retrieval models | Practicum-1 | Assignment 1 | |
 | 36 | 04-05/10 | Retrieval evaluation | Practicum-2 | Assignment 1 | |
 | Part II: DM ||||||
