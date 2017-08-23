@@ -24,7 +24,7 @@ The following packages will be used. All of these are part of the Anaconda distr
 Elasticsearch is an open source search engine.
 See [this page](Elasticsearch.md) for installation and usage.
 
-  * You need to [install the Python client](Elasticsearch.md#from-python)!
+  * Mind that in addition to intalling Elastissearch, you also need to [install the Python client](Elasticsearch.md#from-python)!
 
 
 ## Jupyter
@@ -46,5 +46,5 @@ Download the [Environment_test](Environment_test.ipynb) Jupyter notebook for tes
 
 ## Notes for Windows
 
+  * For Elasticsearch, you might need to install [JRE](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) (not JDK!)
   * For running `jupyter notebook` and `pip` on Windows, you might need to use the "Anaconda Prompt" instead of the standard command line (cmd). You can find the Anaconda Prompt in your start menu.
-  
