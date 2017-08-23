@@ -42,3 +42,9 @@ Download the [Environment_test](Environment_test.ipynb) Jupyter notebook for tes
 
   * Click "raw" to download it. Make sure the extension is `.ipynb`
   * Go to the folder where you downloaded the file and type `jupyter notebook`
+
+
+## Notes for Windows
+
+  * For running `jupyter notebook` and `pip` on Windows, you might need to use the "Anaconda Prompt" instead of the standard command line (cmd). You can find the Anaconda Prompt in your start menu.
+  
