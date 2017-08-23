@@ -38,4 +38,7 @@ To start Jupyter, go to the command line, change to the directory that contains 
 
 ## Test
 
-Download the `Environment_test.ipynb` Jupyter notebook for testing if everything works.
+Download the [Environment_test](Environment_test.ipynb) Jupyter notebook for testing if everything works.
+
+  * Click "raw" to download it. Make sure the extension is `.ipynb`
+  * Go to the folder where you downloaded the file and type `jupyter notebook`
