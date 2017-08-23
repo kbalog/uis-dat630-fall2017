@@ -23,7 +23,9 @@ The following packages will be used. All of these are part of the Anaconda distr
 
 Elasticsearch is an open source search engine.
 See [this page](Elasticsearch.md) for installation and usage.
-You'll need to install the Python client.
+
+  * You need to install the Python client (see the "" section!).
+
 
 ## Jupyter
 
