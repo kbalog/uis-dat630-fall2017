@@ -2,15 +2,15 @@
 
 ## Course information
 
-See [this page](General_info.md)
-
+  * [General information](General_info.md)
+  * [Programming environment and tools](environment/)
 
 ## Schedule
 
 | Week | Days | Lecture (Mon) | Practicum (Tue) | Lab (Wed) | Reading |
 | --- | --- | --- | --- | --- | --- |
 | Part I: IR ||||||
-| 34 | 21-23/08 | *no lecture* | Course intro; Search engine architecture and indexing ([slides](https://speakerdeck.com/kbalog/2017-search-engine-architecture-and-indexing)) | Setting up environment | |
+| 34 | 21-23/08 | *no lecture* | Course intro; Search engine architecture and indexing ([slides](https://speakerdeck.com/kbalog/2017-search-engine-architecture-and-indexing)) | [Setting up environment](environment/) | |
 | 35 | 21-23/08 | Retrieval models | Practicum-1 | Assignment 1 | |
 | 36 | 04-06/09 | Retrieval evaluation | Practicum-2 | Assignment 1 | |
 | Part II: DM ||||||
