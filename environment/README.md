@@ -31,7 +31,7 @@ Elasticsearch is an open source search engine.
 
 ### 2.1. Installing Java dependencies
 
-On **Windows**, you will likely need to install Java dependencies before running Elasticsearch. If Java is installed, running
+You will likely need to install Java dependencies before running Elasticsearch. If Java is installed, running
 
 ```
 $ java -version
@@ -42,14 +42,11 @@ should output your Java version. Otherwise, install it:
   * Get the [latest JRE](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) (mind you need to tick the **Accept License Agreement** radio button before clicking the suitable installer);
   * install it.
 
-Then, ensure that its path environment variable is known by your command prompt, by checking you get a correct path as output after running the following on the command prompt:
+Then, ensure that **its path environment variable is known by your command prompt**. For this, check that you get a correct path as output after running `where javac` on the Windows command prompt, or `whereis javac` on a Unix terminal.
 
-```
-$ where javac
-```
+If that is not known, you need to set the `JRE_HOME` environment variable, and add it to all the needed paths in the `PATH` variable.
 
-If that is not known, you need to set the `JRE_HOME` environment variable, and add it to all the needed paths in the `PATH` variable. There is [a way to do it graphically](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) and, if it that doesn't work, a [way to do it on the command prompt](http://www.codejava.net/java-core/how-to-set-environment-variables-for-java-using-command-line) **running it as administrator, as explained in the link**. Mind that, in any case, you may likely need to **restart the command prompt** after the setting to check the path is right.
-
+  * On Windows, there is [a way to do it graphically](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html) and, if it that doesn't work, a [way to do it on the command prompt](http://www.codejava.net/java-core/how-to-set-environment-variables-for-java-using-command-line) **running it as administrator, as explained in the link**. Mind that, in any case, you may likely need to **restart the command prompt** after the setting to check the path is right.
 
 Even though [it claims to require JDK](https://www.elastic.co/guide/en/elasticsearch/hadoop/current/requirements.html), it should be enough to install JRE as explained. Otherwise, repeat the steps of installation (but this time installing the [latest JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)) and path variable setting (but this time being `JAVA_HOME` the involved variable).
 
@@ -65,7 +62,7 @@ See [this page](Elasticsearch.md) for detailed installation and usage hints. In 
 
 ### 2.3. Installing Python client for Elasticsearch
 
-In addition to intalling Elasticsearch, you also need to [install the Python client](Elasticsearch.md#from-python). Run
+In addition to installing Elasticsearch, you also need to [install the Python client](Elasticsearch.md#from-python). Run:
 
 ```
 pip install elasticsearch
