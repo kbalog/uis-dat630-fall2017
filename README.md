@@ -4,7 +4,7 @@
 
   * [General information](General_info.md)
   * [Programming environment and tools](environment/)
-  * [GitHub usage][GitHub_usage.md]
+  * [GitHub usage](GitHub_usage.md)
 
 ## Schedule
 
