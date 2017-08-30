@@ -27,6 +27,7 @@ Elasticsearch is distributed, which means that indices can be divided into shard
 
 You can use any tool/programming language to talk to Elasticsearch through a HTTP (RESTful) API.
 
+See the [Jupyter notebook](Elasticsearch.ipynb) for a working Python example.
 
 ### From a browser
 
