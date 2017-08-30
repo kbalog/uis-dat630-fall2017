@@ -13,7 +13,7 @@ You may clone this repository, but it is probably easiest to access it via the G
 
 ## Private repository
 
-For each student, a private repository is created, which is available at https://github.com/uis-dat630-fall2017/{username} (replace {username} with your GitHub username).
+For each student, a private repository is created, which is available at https://github.com/uis-dat630-fall2017/{username}-files (replace {username} with your GitHub username).
 
 For each practicum and assignment, the starter files will be pushed to this repository. You should clone this repository on your personal computer (to be done only once), and pull the changes before each practicum/assignment. You can also commit and push the changes you make, i.e., use it for backup and version control. (This may come especially handy when you work on the assignments.) See the next section "Working with GitHub".
 
