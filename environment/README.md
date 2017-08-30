@@ -22,7 +22,7 @@ The following packages will be used. All of these are part of the Anaconda distr
 
 ...it is possible to run, in the command line, some commands installed by Anaconda. **You don't need to run them, but it is good to keep them in mind for later.** Some important commands are `conda list` (which list all the packages installed), `python`, `jupyter notebook`, `pip`.
 
-For **Windows users**, these commands may need to be ran on the "Anaconda Prompt" instead of the standard command line prompt (cmd). You can find the Anaconda Prompt in your *Start menu*.
+For **Windows users**, these commands may need to be run on the "Anaconda Prompt" instead of the standard command line prompt (cmd). You can find the Anaconda Prompt in your *Start menu*.
 
 
 ## 2. Elasticsearch
@@ -57,7 +57,7 @@ See [this page](Elasticsearch.md) for detailed installation and usage hints. In 
   * Download the latest [Elasticsearch distribution]( https://www.elastic.co/downloads/elasticsearch) (currently 5.5.2);
   * unzip it;
   * go to the command line (or the standard command prompt in Windows), change to the directory where Elasticsearch was unzipped (it should contain a `bin/` subdirectory);
-  * run `bin/elasticsearch` on Unix, or `bin\elasticsearch.bat` on Windows.
+  * run `./bin/elasticsearch` on Unix, or `bin\elasticsearch.bat` on Windows.
 
 
 ### 2.3. Installing Python client for Elasticsearch
@@ -94,7 +94,7 @@ Anaconda Navigator on non-Windows installations should come with an alternative 
 
 This will open a page on the default Web browser, where you can click on the notebook of interest.
 
-Once in the notebook, you can run each of the cells. Mind that some cell may use a value only created if a previous cell is ran, i.e., there is some sequential relations among some cells.
+Once in the notebook, you can run each of the cells. Mind that some cell may use a value only created if a previous cell is run, i.e., there is some sequential relations among some cells.
 
 
 ## Test
