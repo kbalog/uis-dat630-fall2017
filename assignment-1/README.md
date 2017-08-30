@@ -9,10 +9,10 @@ The assignment consists of three main parts.
   - Download the document collection and index it using Elasticsearch.
     * Use two fields, title and content.
     * See [this page](https://github.com/kbalog/uis-dat630-fall2017/tree/master/elasticsearch) for help on Elasticsearch.
-    * See [below](#Document_collection) for details about the document collection.
+    * See [below](#document-collection) for details about the document collection.
   - Perform a baseline retrieval using the default retrieval model in Elasticsearch (which is BM25).
     * Search only in the content field.
-    * Return the top 100 documents for each query and write the results to a file (see [below](#Output_file_format) for the output file format).
+    * Return the top 100 documents for each query and write the results to a file (see [below](#output-file-format) for the output file format).
 
 
 ## Part 2 (week 36)
