@@ -29,9 +29,11 @@ The assignment consists of three main parts.
     * For MLM, tune the field weights, smoothing method, and smoothing parameter.
   - You need to reach a **MAP score of minimum 0.07** in order to pass this assignment.
     * *[NOTE] This value might change.*
+  - Perform a query-level comparison between the baseline BM25 model (with default parameter settings) and the MLM approach (with the best parameters).
   - You may compete with a single ranking against other teams.
     * The best performing team (each team member) will get 5 bonus points at the final exam.
     * *Details and submission link are coming soon.*
+
 
 ## Deliverable
 
