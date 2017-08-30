@@ -4,15 +4,20 @@ The task is to implement document retrieval methods and evaluate them using a st
 
 The assignment consists of three main parts.
 
+For each part a skeleton of the code are provided as Jupyter notebooks. These notebooks are pushed to the private GitHub repositories. Make sure you work with the files in your private repo.
+
+
 ## Part 1 (week 35)
 
   - Download the document collection and index it using Elasticsearch.
     * Use two fields, title and content.
     * See [this page](https://github.com/kbalog/uis-dat630-fall2017/tree/master/elasticsearch) for help on Elasticsearch.
     * See [below](#document-collection) for details about the document collection.
+    * The [1_Indexer.ipynb](1_Indexer.ipynb) notebook contains the code that you need to complete.
   - Perform a baseline retrieval using the default retrieval model in Elasticsearch (which is BM25).
     * Search only in the content field.
-    * Return the top 100 documents for each query and write the results to a file (see [below](#output-file-format) for the output file format).
+    * Return the top 100 documents for each query in `data/queries.txt` and write the results to a file (see [below](#output-file-format) for the output file format).
+    * The [2_Baseline_retrieval.ipynb](2_Baseline_retrieval.ipynb) notebook contains the code that you need to complete.
 
 
 ## Part 2 (week 36)
