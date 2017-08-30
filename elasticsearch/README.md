@@ -9,7 +9,8 @@ Elasticsearch is distributed, which means that indices can be divided into shard
 ## Tutorials and Resources
 
   * [Official API documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html)
-  * Tutorials
+  * [Official Python client documentation](https://elasticsearch-py.readthedocs.io/en/master/)
+  * Tutorials (mind that some of these might be outdated, i.e., are made for older ES versions)
     - http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html
     - http://joelabrahamsson.com/elasticsearch-101/
     - https://www.tutorialspoint.com/elasticsearch/index.htm
@@ -17,7 +18,7 @@ Elasticsearch is distributed, which means that indices can be divided into shard
 
 ## Installing Elasticsearch
 
-  * Download the latest Elasticsearch distribution from https://www.elastic.co/downloads/elasticsearch (currently 5.5.2)
+  * Download the latest Elasticsearch distribution from https://www.elastic.co/downloads/elasticsearch (currently: 5.5.2)
   * Unzip
   * Run `bin/elasticsearch` on Unix or `bin\elasticsearch.bat` on Windows
 
