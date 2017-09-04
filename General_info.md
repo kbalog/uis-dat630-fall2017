@@ -15,6 +15,7 @@
 
   * Wednesdays are dedicated to working on the assignments. This is the time for asking technical questions and getting help.
   * Over email: dat630help@googlegroups.com
+    * Should you get an answer, and have further inquiries, **please keep** dat630help@googlegroups.com among the receivers (e.g., by responding to all).
   * Before/after the lectures and in the breaks
   * No drop-ins unannounced! Make an appointment in email!
 
