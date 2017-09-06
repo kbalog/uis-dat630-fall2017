@@ -32,5 +32,9 @@
 ## Assignment deadlines
 
   * [Assignment 1](assignment-1/): 18/09 10:00
-  * Assignment 2: 30/10 10:00
-  * Assignment 3: 20/11 10:00
+  * Assignment 2: 23/10 10:00
+  * Assignment 3: 13/11 10:00
+
+## Exam
+
+  * Date: 4/12
