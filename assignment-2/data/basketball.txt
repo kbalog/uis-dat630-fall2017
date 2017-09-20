@@ -1,0 +1,20 @@
+Basketball dataset
+------------------
+
+Attributes in training set, in order:
+LOCATION, W, FINAL_MARGIN, SHOT_NUMBER, PERIOD, GAME_CLOCK, SHOT_CLOCK, DRIBBLES, TOUCH_TIME, SHOT_DIST, PTS_TYPE, CLOSE_DEF_DIST, Target
+         
+Description:
+LOCATION: categorical. 'H' (home) or 'A' (away)
+W: categorical. 'W' (win) or 'L' (lose)
+FINAL_MARGIN: numeric.
+SHOT_NUMBER: numeric.
+PERIOD: categorical. One of the possible regular or extra periods of a match.
+GAME_CLOCK: numeric. Time in seconds to the end of the period.
+SHOT_CLOCK: numeric. Time in seconds to the end of the possession.
+DRIBBLES: numeric.
+TOUCH_TIME: numeric.
+SHOT_DIST: numeric. Shot distance in meters.
+PTS_TYPE: categorical. '1', '2', or '3'.
+CLOSE_DEF_DIST: numeric. Closest defender distance in meters.
+Target: categorical. 'made' or 'missed'. Respectively, whether the shot was made or missed.
