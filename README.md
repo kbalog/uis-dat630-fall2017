@@ -18,7 +18,7 @@
 | Part II: DM ||||||
 | 37 | 11-13/09 | Introduction & data ([slides](https://speakerdeck.com/kbalog/2017-dm-introduction-and-data), [exercises](exercises/lecture-4)) | [Practicum-3](practicum/practicum-3) | [Assignment 1](assignment-1/) | Intro to DM, Chapters 1-2 |
 | 38 | 18-20/09 | Exploring data ([slides](https://speakerdeck.com/kbalog/2017-dm-exploring-data), [exercises](exercises/lecture-4)) | [Practicum-4](practicum/practicum-4) | [Assignment 2A](assignment-2/) |  Intro to DM, Chapter 3 |
-| 39 | 25-27/09 | Classification (basic) ([slides](https://speakerdeck.com/kbalog/2017-dm-classification), [exercises](exercises/lecture-6)) | Practicum-5 | Assignment 2B | Intro to DM, Chapter 4 |
+| 39 | 25-27/09 | Classification (basic) ([slides](https://speakerdeck.com/kbalog/2017-dm-classification), [exercises](exercises/lecture-6)) | [Practicum-5](practicum/practicum-5) | Assignment 2B | Intro to DM, Chapter 4 |
 | 40 | 02-04/10 | TBD (Invited lecture) | TBD (Invited lecture) | Assignment 2B | |
 | 41 | 09-11/10 | Classification (advanced) | Practicum-6 | Assignment 2C | Intro to DM, Chapter 5 |
 | 42 | 16-18/10 | Clustering | Practicum-7 | Assignment 2C | Intro to DM, Chapter 8 |
