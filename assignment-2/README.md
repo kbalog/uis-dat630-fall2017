@@ -16,11 +16,11 @@ For some parts, a skeleton of the code is provided as Jupyter notebooks. These n
 
 ### Part B (week 39)
 
-  * Build a decision tree classifier from the given training data set. Then, apply it on the test set and submit your predictions.
-      - You need to build the decision tree classifier from scratch. (I.e., it is not allowed to use existing machine learning libraries or packages.)
+  * Build a **decision tree classifier** from the given training data set. Then, apply it on the test set and submit your predictions.
+      - You need to build the decision tree classifier **from scratch**. (I.e., it is not allowed to use existing machine learning libraries or packages.)
       - You may use any programming language/environment of your choice, but you are required to submit the complete source code that produced your output.
-      - The output (a single file with the predictions for each test instance) must be generated automatically using the decision tree approach implemented by you. Submitting predictions from any other source (Internet, another team, etc.) is considered cheating and will result in immediate disqualification (i.e., dismissal from the course).   
-      - The predictions are also required to be submitted on [Kaggle](https://www.kaggle.com/t/42fe17fac7d54895bb0181e85b4d4d19).
+      - The output (a single file with the predictions for each test instance) **must be generated automatically using the decision tree approach implemented by you**. Submitting predictions from any other source (Internet, another team, etc.) is considered cheating and will result in immediate disqualification (i.e., dismissal from the course).   
+      - The predictions are also required to be submitted on [Kaggle](https://www.kaggle.com/t/42fe17fac7d54895bb0181e85b4d4d19). **The team name for the submissions must be the GitHub username of the team leader**.
       - In order to pass this assignment, you need to reach an **Accuracy of at least 0.53** on the test set.
       - The best performing team (each team member) will get 5 bonus points at the final exam (which will be 100 points in total).
       - A skeleton of a possible implementation in Python for an example dataset is made available in [this notebook](2_Decision_tree_example.ipynb).
@@ -31,17 +31,10 @@ For some parts, a skeleton of the code is provided as Jupyter notebooks. These n
 
 ### Part C (week 41)
 
-  * Train different advanced classifiers and assess their performances until one is found such that it improves the decision tree from Part B.
-      - These are the possible advanced classifiers, each one will require to find a proper value for its parameter(s):
-          - Nearest Neighbors
-          - Naive Bayes
-          - SVM (linear kernel)
-          - SVM (polyn. kernel)
-          - SVM (RBF kernel)
-          - Random Forest
+  * Train any **advanced classifier(s)** (different from the decision tree) and assess their performances until one is found such that it improves the decision tree from Part B.
       - You may use any programming language/environment of your choice, but you are required to submit the complete source code that produced your output.
-      - The output (a single file with the predictions for each test instance) must be generated automatically using the decision tree approach implemented by you. Submitting predictions from any other source (Internet, another team, etc.) is considered cheating and will result in immediate disqualification (i.e., dismissal from the course).   
-      - The predictions can optionally be submitted to another [kaggle competition](https://www.kaggle.com/t/7cd45d4a0ca44ee39c50fdad548d1a0e).
+      - The output (a single file with the predictions for each test instance) **must be generated automatically using the classifier of your choice**. Submitting predictions from any other source (Internet, another team, etc.) is considered cheating and will result in immediate disqualification (i.e., dismissal from the course).   
+      - The predictions can optionally be submitted to another [kaggle competition](https://www.kaggle.com/t/7cd45d4a0ca44ee39c50fdad548d1a0e). **The team name for the submissions must be the GitHub username of the team leader**
       - The best performing team (each team member) will get 5 bonus points at the final exam (which will be 100 points in total).
       - In order to be eligible for the bonus, you need to reach an **Accuracy of at least 0.53874** on the test set.
       - A notebook for this part is provided [here](3_advanced_classifiers.ipynb).
@@ -54,7 +47,7 @@ For some parts, a skeleton of the code is provided as Jupyter notebooks. These n
 
 ## Deliverable
 
-  - You need to complete the [Report file](REPORT.md) in your private repository.
+  - You need to **complete the [Report file](REPORT.md)** in your private repository.
   - Only one report is needed per team, handed in by the team leader. Other team members only need to write the GitHub username of the team leader.
   - A team can consist of at most 3 people.
   - All code files that were used to produce the report must be included in the GitHub repository. Do not store large data files in GitHub!
