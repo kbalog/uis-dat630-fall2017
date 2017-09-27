@@ -64,6 +64,7 @@ For some parts, a skeleton of the code is provided as Jupyter notebooks. These n
 ## Help
 
   * A **skeleton** of a possible implementation in Python for an example dataset is made available [here](2_Decision_tree_example.ipynb).
+  * Since the ground truth labels are not made available, you might use some of the techniques mentioned to estimate the performance in absence of ground truth, e.g., holdout or k-fold cross validation.
   * Some **enhancement techniques** that will help you to improve accuracy:
     - Ignoring certain attributes
     - Early stopping: don't split the node further if the number of training instances is < X; make a leaf node with the majority class
