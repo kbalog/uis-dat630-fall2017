@@ -1,0 +1,14 @@
+sunny, 85, 85, false, No
+sunny, 80, 90, true, No
+overcast, 83, 78, false, Yes
+rain, 70, 96, false, Yes
+rain, 68, 80, false, Yes
+rain, 65, 70, true, No
+overcast, 64, 65, true, Yes
+sunny, 72, 95, false, No
+sunny, 69, 70, false, Yes
+rain, 75, 80, false, Yes
+sunny, 75, 70, true, Yes
+overcast, 72, 90, true, Yes
+overcast, 81, 75, false, Yes
+rain, 71, 80, true, No
