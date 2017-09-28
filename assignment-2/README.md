@@ -48,6 +48,9 @@ For some parts, a skeleton of the code is provided as Jupyter notebooks. These n
 ## Deliverable
 
   - You need to **complete the [Report file](REPORT.md)** in your private repository.
+  - The content of that Report file must be exactly the same as the starter file, excepting the replacements of the `*TODO*` parts by your data.
+    - Replace the entire `*TODO*` string (not just the `TODO` substring) by your answer. E.g., if your username is johnsmith, don't write it as `*johnsmith*`.
+    - In the "Additional team members" part, enter **all** the team members who are not the leader, i.e., **including yourself** if you are not the leader.
   - Only one report is needed per team, handed in by the team leader. Other team members only need to write the GitHub username of the team leader.
   - A team can consist of at most 3 people.
   - All code files that were used to produce the report must be included in the GitHub repository. Do not store large data files in GitHub!
