@@ -19,14 +19,14 @@
 | 37 | 11-13/09 | Introduction & data ([slides](https://speakerdeck.com/kbalog/2017-dm-introduction-and-data), [exercises](exercises/lecture-4)) | [Practicum-3](practicum/practicum-3) | [Assignment 1](assignment-1/) | Intro to DM, Chapters 1-2 |
 | 38 | 18-20/09 | Exploring data ([slides](https://speakerdeck.com/kbalog/2017-dm-exploring-data), [exercises](exercises/lecture-4)) | [Practicum-4](practicum/practicum-4) | [Assignment 2A](assignment-2/) |  Intro to DM, Chapter 3 |
 | 39 | 25-27/09 | Classification (basic) ([slides](https://speakerdeck.com/kbalog/2017-dm-classification), [exercises](exercises/lecture-6)) | [Practicum-5](practicum/practicum-5) | [Assignment 2B](assignment-2/) | Intro to DM, Chapter 4 |
-| 40 | 02-04/10 | TBD (Invited lecture) | TBD (Invited lecture) | [Assignment 2B](assignment-2/) | |
+| 40 | 02-04/10 | Locality Sensitive Hashing (invited) ([slides](https://speakerdeck.com/kbalog/2017-dm-locality-sensitive-hashing)) | Frequent Itemsets and Association Rule Mining (invited) ([slides](https://speakerdeck.com/kbalog/2017-dm-frequent-itemsets-and-association-rule-mining)) | [Assignment 2B](assignment-2/) | |
 | 41 | 09-11/10 | Classification (advanced) | Practicum-6 | Assignment 2C | Intro to DM, Chapter 5 |
 | 42 | 16-18/10 | Clustering | Practicum-7 | Assignment 2C | Intro to DM, Chapter 8 |
 | Part III: advanced IR ||||||
 | 43 | 23-25/10 | Web search | Practicum-8 | Assignment 3 | |
 | 44 | 30-31/10 | Learning-to-rank | Practicum-9 | Assignment 3 | |
-| 45 | 06-08/11 | Semantic search | Practicum-10 | Assignment 3 | |
-| 46 | 13-14/11 | Trial exam Part I | Trial exam Part II | Q&A | | |
+| 45 | 06-08/11 | Trial exam Part I | Trial exam Part II | Assignment 3 | |
+| 46 | 13-14/11 | Semantic search | Practicum-10 | Final Q&A | |
 
 
 ## Assignment deadlines
