@@ -37,7 +37,7 @@ For some parts, a skeleton of the code is provided as Jupyter notebooks. These n
       - The predictions can optionally be submitted to another [kaggle competition](https://www.kaggle.com/t/7cd45d4a0ca44ee39c50fdad548d1a0e). **The team name for the submissions must be the GitHub username of the team leader**
       - The best performing team (each team member) will get 5 bonus points at the final exam (which will be 100 points in total).
       - In order to be eligible for the bonus, you need to reach an **Accuracy of at least 0.53874** on the test set.
-      - A notebook for this part is provided [here](3_advanced_classifiers.ipynb).
+      - A notebook with a possible skeleton for this part is provided [here](3_Alternative_classifiers.ipynb).
 
 
 ### Part C (week 42)
