@@ -23,9 +23,9 @@
 | 41 | 09-11/10 | Classification (advanced) ([slides](https://speakerdeck.com/kbalog/2017-dm-classification-2), [exercises](exercises/lecture-9)) | *No lecture* (Bachelor & Master Dagen 2017) | [Practicum-6](practicum/practicum-6) | Intro to DM, Chapter 5 |
 | 42 | 16-18/10 | Clustering ([slides](https://speakerdeck.com/kbalog/2017-dm-clustering), [exercises](exercises/lecture-10)) | [Practicum-7](practicum/practicum-7) | [Assignment 2C](assignment-2/) | Intro to DM, Chapter 8 |
 | Part III: advanced IR ||||||
-| 43 | 23-25/10 | Web search ([slides](https://speakerdeck.com/kbalog/2017-web-search), [exercises](exercises/lecture-11)) | [Practicum-8](practicum/practicum-8) | Assignment 3 | |
-| 44 | 30-31/10 | Learning-to-rank | Practicum-9 | Assignment 3 | |
-| 45 | 06-08/11 | Trial exam Part I | Trial exam Part II | Assignment 3 | |
+| 43 | 23-25/10 | Web search ([slides](https://speakerdeck.com/kbalog/2017-web-search), [exercises](exercises/lecture-11)) | [Practicum-8](practicum/practicum-8) | [Assignment 3](assignment-3/) | |
+| 44 | 30-31/10 | Learning-to-rank | Practicum-9 | [Assignment 3](assignment-3/) | |
+| 45 | 06-08/11 | Trial exam Part I | Trial exam Part II | [Assignment 3](assignment-3/) | |
 | 46 | 13-14/11 | Semantic search | Practicum-10 | Final Q&A | |
 
 
@@ -33,7 +33,7 @@
 
   * [Assignment 1](assignment-1/): 18/09 10:00
   * [Assignment 2](assignment-2/): 23/10 10:00
-  * Assignment 3: 13/11 10:00
+  * [Assignment 3](assignment-3/): 13/11 10:00
 
 ## Exam
 
