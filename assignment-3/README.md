@@ -124,6 +124,11 @@ Currently, the following functionality is supported.
         - `df` (mandatory): field to search in
         - `size` (optional): number of hits to return (default: 10)
     - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/_search?q=united+states&df=title&size=20`
+  * **Termvectors**: `/<indexname>/<docid>/_termvectors`
+    - Returns information and statistics on terms in the fields of a particular document using [es.termvectors()](https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.termvectors)
+    - Parameters:
+        - `term_statistics` (optional): set true to return term statistics (default is false)
+    - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/clueweb12-0000tw-07-01629/_termvectors?term_statistics=true`
 
 The API may be extended over time with additional functionality, should the need arise.  If you have specific requests, do let us know.
 
