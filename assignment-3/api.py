@@ -50,5 +50,11 @@ def search(indexname):
     return jsonify(es.search(index=indexname, q=q, df=df, _source=False, size=size))
 
 
+@app.route("/<indexname>/<docid>/_termvectors")
+def termvectors(indexname, docid):
+    ts = (request.args.get('term_statistics') == "true")
+    return jsonify(es.termvectors(index=indexname, doc_type=DOC_TYPE, id=docid, term_statistics=ts))
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5002)
