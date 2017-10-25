@@ -15,6 +15,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
     * Return the top 100 documents for each query in `data/queries.txt` and write the results to a `data/baseline_title.txt` and `data/baseline_content.txt` files (see [below](#output-file-format) for the output file format).
     * Evaluate the results against the ground truth (in `data/qrels.csv`) in terms of NDCG@10 and NDCG@20.
   - **IMPORTANT:** the indexing of the web collection has not completed yet. This means that you can write your code, but the results should not be considered final (as new documents are being added). When indexing is complete, this notice will be removed.
+  * The [1_Baseline.ipynb](1_Baseline.ipynb) notebook contains sample code for talking to the API.
 
 
 ## Part 2 (week 44)
