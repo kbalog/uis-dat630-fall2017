@@ -24,7 +24,7 @@
 | 42 | 16-18/10 | Clustering ([slides](https://speakerdeck.com/kbalog/2017-dm-clustering), [exercises](exercises/lecture-10)) | [Practicum-7](practicum/practicum-7) | [Assignment 2C](assignment-2/) | Intro to DM, Chapter 8 |
 | Part III: advanced IR ||||||
 | 43 | 23-25/10 | Web search ([slides](https://speakerdeck.com/kbalog/2017-web-search), [exercises](exercises/lecture-11)) | [Practicum-8](practicum/practicum-8) | [Assignment 3](assignment-3/) | SE, Sections 3.2, 4.5 |
-| 44 | 30-31/10 | Learning-to-rank | [Practicum-9](practicum/practicum-9) | [Assignment 3](assignment-3/) | |
+| 44 | 30-31/10 | Learning-to-rank ([slides](https://speakerdeck.com/kbalog/2017-learning-to-rank)) | [Practicum-9](practicum/practicum-9) | [Assignment 3](assignment-3/) | |
 | 45 | 06-08/11 | Trial exam Part I | Trial exam Part II | [Assignment 3](assignment-3/) | |
 | 46 | 13-14/11 | Semantic search | Practicum-10 | Final Q&A | |
 
