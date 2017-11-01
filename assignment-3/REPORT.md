@@ -24,7 +24,7 @@ Complete the table with baseline retrieval results.
   - For the anchor text field, limit results to documents that are present in the "Category B" subset of the collection.
 
 | **Field** | **Output file** | **NDCG@10** | **NDCG@20** |
-| -- | -- |
+| -- | -- | -- | -- |
 | Title | *TODO* | *TODO* | *TODO* |
 | Content | *TODO* | *TODO* | *TODO* |
 | Anchors | *TODO* | *TODO* | *TODO* |
@@ -48,7 +48,7 @@ Complete the table with learning-to-rank results.
   - Use the same training/test folds to make sure the numbers are comparable!
 
 | **Features** | **Output file** | **NDCG@10** | **NDCG@20** |
-| -- | -- |
+| -- | -- | -- | -- |
 | Only QD features | *TODO* | *TODO* | *TODO* |
 | QD + Q features | *TODO* | *TODO* | *TODO* |
 | QD + D features | *TODO* | *TODO* | *TODO* |
