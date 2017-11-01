@@ -23,12 +23,11 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Implement a learning-to-rank method with the following minimum requirements:
       - Consider document-query matching in minimum 3 fields (title, content and anchors) and at least two different retrieval models (e.g., BM25 and LM). That is, 6 document-query features minimum.
   - Perform baseline (BM25) retrieval on a separate anchor text index.
-  - Test your model using 5-fold cross-validation on the given training data (queries and relevance judments, i.e., `data/queries.txt` and `data/qrels.csv`).
-  - The anchor text index can be accessed the same way as the regular document index. See [below](#search-api).
+      - The anchor text index (called `clueweb12b_anchors`) can be accessed the same way as the regular document index. See [below](#search-api).
       - Note that the anchor text index contains the entire ClueWeb collection (over 700 million docs), not just the Category B subset. I.e., you need to ignore documents that are not present in the regular index.
-      - **IMPORTANT:** the indexing of the web collection has not completed yet. This means that you can write your code, but the results should not be considered final (as new documents are being added). When indexing is complete, this notice will be removed.      
+  - Test your model using 5-fold cross-validation on the given training data (queries and relevance judments, i.e., `data/queries.txt` and `data/qrels.csv`).
   - No notebook is provided for this part of the assignment.
-      - Use the code from Task 2 of Practicum 9 as your starting point.
+      - Use the [code from Practicum 9](https://github.com/kbalog/uis-dat630-fall2017/tree/master/practicum/practicum-9/solutions) as your starting point.
 
 
 ## Part 3 (week 45)
