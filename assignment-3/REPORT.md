@@ -20,7 +20,7 @@ If you are working as a part of a team, only the a single person, the *team lead
 
 Complete the table with baseline retrieval results.
 
-  - For this part, you need to report numbers using **BM25** as the retrieval model with parameters **k1=1.2** and **b=0.75**.
+  - For this part, you need to report numbers using the Elasticsearch instance that you access via the API.
   - For the anchor text field, limit results to documents that are present in the "Category B" subset of the collection.
 
 | **Field** | **Output file** | **NDCG@10** | **NDCG@20** |
