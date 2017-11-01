@@ -20,15 +20,21 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
 
 ## Part 2 (week 44)
 
-  - Implement a learning-to-rank method with the following minimum requirements.
+  - Implement a learning-to-rank method with the following minimum requirements:
+      - Consider document-query matching in minimum 3 fields (title, content and anchors) and at least two different retrieval models (e.g., BM25 and LM). That is, 6 document-query features minimum.
   - Perform baseline (BM25) retrieval on a separate anchor text index.
   - Test your model using 5-fold cross-validation on the given training data (queries and relevance judments, i.e., `data/queries.txt` and `data/qrels.csv`).
-  - *More details will follow*
+  - The anchor text index can be accessed the same way as the regular document index. See [below](#search-api).
+      - Note that the anchor text index contains the entire ClueWeb collection (over 700 million docs), not just the Category B subset. I.e., you need to ignore documents that are not present in the regular index.
+      - **IMPORTANT:** the indexing of the web collection has not completed yet. This means that you can write your code, but the results should not be considered final (as new documents are being added). When indexing is complete, this notice will be removed.      
+  - No notebook is provided for this part of the assignment.
+      - Use the code from Task 2 of Practicum 9 as your starting point.
 
 
 ## Part 3 (week 45)
 
   - Design and implement additional features to maximize retrieval performance.
+      - Add minimum 2 query and minimum 2 document features.
   - Learn a model on the given training data (i.e., using `data/queries.txt` and `data/qrels.csv`) and apply that model on the set of "unseen" queries in `data/queries2.txt`.
   - You need to submit the generated ranking on Kaggle and reach a minimum NDCG score.
   - Additionally, the best performing team will be awarded with bonus points.
@@ -53,7 +59,8 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
 
 The document collection is the [ClueWeb12](http://lemurproject.org/clueweb12/) dataset, specifically the "Category B" subset of it.  It consists of around 50 million pages.  
 
-An Elasticsearch index of the document collection is provided with `title`, `url`, and `content` fields.  Content comprises only the visible text from the HTML source.
+  * An Elasticsearch index of the documents (web pages) `clueweb12b` is provided with `title`, `url`, and `content` fields.  Content comprises only the visible text from the HTML source.
+  * The anchor texts are stored in a separate index called `clueweb12b_anchors`.  Mind that (unlike the name suggests) this index contains the anchor texts for all ClueWeb document (733M), not only documents from the Category B subset. It means that documents that are present in this index, but not present in the `clueweb12b` index should be ignored.
 
 
 ### Queries
@@ -123,7 +130,9 @@ Currently, the following functionality is supported.
         - `q` (mandatory): query
         - `df` (mandatory): field to search in
         - `size` (optional): number of hits to return (default: 10)
-    - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/_search?q=united+states&df=title&size=20`
+    - Examples:
+        - searching in the title field of the document index `http://gustav1.ux.uis.no:5002/clueweb12b/_search?q=united+states&df=title&size=20`
+        - searching in the anchor text index: `http://gustav1.ux.uis.no:5002/clueweb12b_anchors/_search?q=united+states&df=anchors&size=20`
   * **Termvectors**: `/<indexname>/<docid>/_termvectors`
     - Returns information and statistics on terms in the fields of a particular document using [es.termvectors()](https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.termvectors)
     - Parameters:
