@@ -59,7 +59,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
 The document collection is the [ClueWeb12](http://lemurproject.org/clueweb12/) dataset, specifically the "Category B" subset of it.  It consists of around 50 million pages.  
 
   * An Elasticsearch index of the documents (web pages) `clueweb12b` is provided with `title`, `url`, and `content` fields.  Content comprises only the visible text from the HTML source.
-  * The anchor texts are stored in a separate index called `clueweb12b_anchors`.  Mind that (unlike the name suggests) this index contains the anchor texts for all ClueWeb document (733M), not only documents from the Category B subset. It means that documents that are present in this index, but not present in the `clueweb12b` index should be ignored.
+  * The anchor texts are stored in a separate index called `clueweb12b_anchors`.  Mind that this index contains the anchor texts for all ClueWeb documents, not only documents from the Category B subset. It means that documents that are present in this index, but not in the `clueweb12b` index, should be ignored.
 
 
 ### Queries
