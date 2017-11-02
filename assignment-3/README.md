@@ -14,7 +14,6 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Search separately in two fields: `title` and `content` and report on the performance.
     * Return the top 100 documents for each query in `data/queries.txt` and write the results to a `data/baseline_title.txt` and `data/baseline_content.txt` files (see [below](#output-file-format) for the output file format).
     * Evaluate the results against the ground truth (in `data/qrels.csv`) in terms of NDCG@10 and NDCG@20.
-  - **IMPORTANT:** the indexing of the web collection has not completed yet. This means that you can write your code, but the results should not be considered final (as new documents are being added). When indexing is complete, this notice will be removed.
   * The [1_Baseline.ipynb](1_Baseline.ipynb) notebook contains sample code for talking to the API.
 
 
@@ -140,9 +139,15 @@ Currently, the following functionality is supported.
 
 The API may be extended over time with additional functionality, should the need arise.  If you have specific requests, do let us know.
 
+## FAQ for Assignment 3
 
-## FAQ
+  * **Are the indices final?** Yes.
+  * **Can we get a deadline extension because the indexing was delayed?** No. We compensated for the indexing delays by reducing the amount of deliverables (compared to what was planned originally for this assignment).
+  * **How to deal with junk (relevance=-2) documents when computing NDCG?** The gain for that document is -2, i.e., you get a penalty for returning a junk result.
+  * **Should we use binary target labels (i.e., target=1 if rel>0 and target=0 if rel<=0)?** No. Use the relevance labels directly as target values. We are treating it as a regression problem, not as a binary classification task.
 
+
+## General FAQ
   * **Does each part need to be delivered separately?** No, you need to deliver everything at once, by the closing date.
   * **Can I use a programming language other than Python?** Yes, you may use any programming language/tool. However, you are required to submit the complete source code that produced your output.
   - **What resources can be used?**
