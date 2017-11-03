@@ -6,6 +6,7 @@
   * [Programming environment and tools](environment/)
   * [GitHub usage](GitHub_usage.md)
   * [Elasticsearch usage](elasticsearch/)
+  * [Exam information][Exam_info]
 
 ## Schedule
 
