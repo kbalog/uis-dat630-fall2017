@@ -14,6 +14,8 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Search separately in two fields: `title` and `content` and report on the performance.
     * Return the top 100 documents for each query in `data/queries.txt` and write the results to a `data/baseline_title.txt` and `data/baseline_content.txt` files (see [below](#output-file-format) for the output file format).
     * Evaluate the results against the ground truth (in `data/qrels.csv`) in terms of NDCG@10 and NDCG@20.
+       - You should get an NDCG@10 around 0.14 for the content field and 0.12 for the title field.
+       - In the NDCG computations, use gain=0 for documents with relevance < 0.
   * The [1_Baseline.ipynb](1_Baseline.ipynb) notebook contains sample code for talking to the API.
 
 
@@ -143,7 +145,7 @@ The API may be extended over time with additional functionality, should the need
 
   * **Are the indices final?** Yes.
   * **Can we get a deadline extension because the indexing was delayed?** No. We compensated for the indexing delays by reducing the amount of deliverables (compared to what was planned originally for this assignment).
-  * **How to deal with junk (relevance=-2) documents when computing NDCG?** The gain for that document is -2, i.e., you get a penalty for returning a junk result.
+  * **How to deal with junk documents with relevance=-2?** When computing NDCG, use gain 0 for those results.  On the other hand, when training the model, use -2 as the target value (so that your model can learn to rank those results real low).
   * **Should we use binary target labels (i.e., target=1 if rel>0 and target=0 if rel<=0)?** No. Use the relevance labels directly as target values. We are treating it as a regression problem, not as a binary classification task.
 
 
