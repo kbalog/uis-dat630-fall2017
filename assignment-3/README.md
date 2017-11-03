@@ -1,5 +1,9 @@
 # Assignment 3
 
+**Updates:**
+  - The indices are final. We posted the NDCG@10 scores that you should get for the baseline methods.
+  - It's enough to output top-20 results (was 100 before).
+
 The task is to implement methods for web search and evaluate them using a standard test collection.
 
 The assignment consists of three main parts.
@@ -12,7 +16,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Perform baseline retrieval using Elasticsearch and BM25 (i.e., the default model).
   - An Elasticsearch index is already created (that is, we already indexed the document collection for you). You can access it via an API; see [below](#search-api).
   - Search separately in two fields: `title` and `content` and report on the performance.
-    * Return the top 100 documents for each query in `data/queries.txt` and write the results to a `data/baseline_title.txt` and `data/baseline_content.txt` files (see [below](#output-file-format) for the output file format).
+    * Return the top 20 documents for each query in `data/queries.txt` and write the results to a `data/baseline_title.txt` and `data/baseline_content.txt` files (see [below](#output-file-format) for the output file format).
     * Evaluate the results against the ground truth (in `data/qrels.csv`) in terms of NDCG@10 and NDCG@20.
        - You should get an NDCG@10 around 0.14 for the content field and 0.12 for the title field.
        - In the NDCG computations, use gain=0 for documents with relevance < 0.
