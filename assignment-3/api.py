@@ -56,5 +56,18 @@ def termvectors(indexname, docid):
     return jsonify(es.termvectors(index=indexname, doc_type=DOC_TYPE, id=docid, term_statistics=ts))
 
 
+@app.route("/<indexname>/<docid>/_exists")
+def exists(indexname, docid):
+    return jsonify({"exists": es.exists(index=indexname, doc_type=DOC_TYPE, id=docid)})
+
+
+@app.route("/<indexname>/_analyze")
+def analyze(indexname):
+    text = request.args.get('text')
+    if text is None:
+        return "Parameter text is missing"
+    return jsonify(es.indices.analyze(index=indexname, body={"analyzer": "english", "text": text}, format="text"))
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5002)
