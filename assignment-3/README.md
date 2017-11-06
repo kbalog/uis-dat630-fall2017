@@ -3,6 +3,7 @@
 **Updates:**
   - The indices are final. We posted the NDCG@10 scores that you should get for the baseline methods.
   - It's enough to output top-20 results (was 100 before).
+  - Two new API requests have been added: (1) `exists` for checking if a given document exists in the index (instead of using `termvectors` for that) and (2) `analyze` for tokenizing the query for custom retrieval.
 
 The task is to implement methods for web search and evaluate them using a standard test collection.
 
@@ -41,9 +42,10 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Design and implement additional features to maximize retrieval performance.
       - Add minimum 2 query and minimum 2 document features.
   - Learn a model on the given training data (i.e., using `data/queries.txt` and `data/qrels.csv`) and apply that model on the set of "unseen" queries in `data/queries2.txt`.
-  - You need to submit the generated ranking on Kaggle and reach a minimum NDCG score.
+  - You need to submit the generated ranking on Kaggle and reach a minimum NDCG@20 score.
+      - *The kaggle link and the minimum NDCG@20 score will be provided here.*
   - Additionally, the best performing team will be awarded with bonus points.
-  - *More details will follow*
+
 
 
 ## Deliverable
@@ -143,6 +145,17 @@ Currently, the following functionality is supported.
     - Parameters:
         - `term_statistics` (optional): set true to return term statistics (default is false)
     - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/clueweb12-0000tw-07-01629/_termvectors?term_statistics=true`
+    - NOTE: do not use the termvectors request to check if a document exists in the index. Use the exists endpoint instead (see next).
+  * **Exists**: `/<indexname>/<docid>/_exists`
+    - Returns whether the given document ID exists in that index using [es.exists()](https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.exists)
+    - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/clueweb12-1700tw-22-12689/_exists`
+  * **Analyze**: `/<indexname>/_analyze`
+    - Returns the analyzed version of the input text using [es.indices.analyze()](https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.client.IndicesClient.analyze)
+    - This endpoint is needed when using another retrieval method for scoring the query (e.g., LM). Instead of just splitting by spaces, use this request for tokenizing the query text.
+    - Parameters:
+        - `text` (mandatory): text to be analyzed
+    - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/_analyze?text=World%27s+biggest+dog`
+
 
 The API may be extended over time with additional functionality, should the need arise.  If you have specific requests, do let us know.
 
@@ -152,6 +165,9 @@ The API may be extended over time with additional functionality, should the need
   * **Can we get a deadline extension because the indexing was delayed?** No. We compensated for the indexing delays by reducing the amount of deliverables (compared to what was planned originally for this assignment).
   * **How to deal with junk documents with relevance=-2?** When computing NDCG, use gain 0 for those results.  On the other hand, when training the model, use -2 as the target value (so that your model can learn to rank those results real low).
   * **Should we use binary target labels (i.e., target=1 if rel>0 and target=0 if rel<=0)?** No. Use the relevance labels directly as target values. We are treating it as a regression problem, not as a binary classification task.
+  * **Is it possible to query the API using different similarity methods?** No. As the index would need to be closed and re-opened after each such change, it would reduce the throughput of the API too much.
+  * **Will it not be a lot of work for us then to implement another retrieval method?** You should have the LM implementation from Assignment 1 that you can reuse.  We also made our LM implementation available [here](LM_scoring.ipynb). You may also choose a simpler similarity function, e.g., TF-IDF or even just TF or IDF.
+  * **How to check if a given document that we retrieve from the anchors text index exists in ClueWeb Category B?** A separate `exists` request has been introduced for that. Do not use `termvectors`, as that is too slow. Only use `termvectors` when computing the retrieval scores for a given document.
 
 
 ## General FAQ
