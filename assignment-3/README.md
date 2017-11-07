@@ -1,9 +1,10 @@
 # Assignment 3
 
-**Updates:**
-  - The indices are final. We posted the NDCG@10 scores that you should get for the baseline methods.
-  - It's enough to output top-20 results (was 100 before).
+**Updates (most recent first):**
+  - LM scoring code has been shared in the [LM_scoring.ipynb](LM_scoring.ipynb) notebook.
   - Two new API requests have been added: (1) `exists` for checking if a given document exists in the index (instead of using `termvectors` for that) and (2) `analyze` for tokenizing the query for custom retrieval.
+  - It's enough to output top-20 results (was 100 before).
+  - The indices are final. We posted the NDCG@10 scores that you should get for the baseline methods.
 
 The task is to implement methods for web search and evaluate them using a standard test collection.
 
@@ -28,6 +29,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
 
   - Implement a learning-to-rank method with the following minimum requirements:
       - Consider document-query matching in minimum 3 fields (title, content and anchors) and at least two different retrieval models (e.g., BM25 and LM). That is, 6 document-query features minimum.
+      - The code for language modeling scoring (if you prefer our implementation over yours from Assignment 1) is made available in [LM_scoring.ipynb](LM_scoring.ipynb).
   - Perform baseline (BM25) retrieval on a separate anchor text index.
       - The anchor text index (called `clueweb12b_anchors`) can be accessed the same way as the regular document index. See [below](#search-api).
       - Note that the anchor text index covers the entire ClueWeb collection, not just the Category B subset. I.e., you need to ignore documents that are not present in the regular index.
@@ -168,6 +170,7 @@ The API may be extended over time with additional functionality, should the need
   * **Is it possible to query the API using different similarity methods?** No. As the index would need to be closed and re-opened after each such change, it would reduce the throughput of the API too much.
   * **Will it not be a lot of work for us then to implement another retrieval method?** You should have the LM implementation from Assignment 1 that you can reuse.  We also made our LM implementation available [here](LM_scoring.ipynb). You may also choose a simpler similarity function, e.g., TF-IDF or even just TF or IDF.
   * **How to check if a given document that we retrieve from the anchors text index exists in ClueWeb Category B?** A separate `exists` request has been introduced for that. Do not use `termvectors`, as that is too slow. Only use `termvectors` when computing the retrieval scores for a given document.
+  * **I'm getting a lower NDCG score for the baselines than what I'm supposed to.** Make sure you treat relevance=-2 as relevance=0 when computing NDCG.
 
 
 ## General FAQ
