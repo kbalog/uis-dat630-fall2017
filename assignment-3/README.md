@@ -1,6 +1,7 @@
 # Assignment 3
 
 **Updates (most recent first):**
+  - Caching has been added to the API. Getting search results and termvectors should be much faster from now on. 
   - [Slides](https://speakerdeck.com/kbalog/2017-learning-to-rank) have been updated with specific feature suggestions. The notebook for Part 3 is [available here.](3_LTR.ipynb).
   - LM scoring code has been shared in the [LM_scoring.ipynb](LM_scoring.ipynb) notebook.
   - Two new API requests have been added: (1) `exists` for checking if a given document exists in the index (instead of using `termvectors` for that) and (2) `analyze` for tokenizing the query for custom retrieval.
