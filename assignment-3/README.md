@@ -35,7 +35,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
       - The anchor text index (called `clueweb12b_anchors`) can be accessed the same way as the regular document index. See [below](#search-api).
       - Note that the anchor text index covers the entire ClueWeb collection, not just the Category B subset. I.e., you need to ignore documents that are not present in the regular index.
       - The anchor text index should give an NDCG@10 score of 0.105
-  - Test your model using 5-fold cross-validation on the given training data (queries and relevance judments, i.e., `data/queries.txt` and `data/qrels.csv`).
+  - Test your model using 5-fold cross-validation on the given training data (queries and relevance judgments, i.e., `data/queries.txt` and `data/qrels.csv`).
   - No notebook is provided for this part of the assignment.
       - Use the [code from Practicum 9](https://github.com/kbalog/uis-dat630-fall2017/tree/master/practicum/practicum-9/solutions) as your starting point.
 
@@ -150,7 +150,7 @@ Currently, the following functionality is supported.
     - Returns information and statistics on terms in the fields of a particular document using [es.termvectors()](https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.termvectors)
     - Parameters:
         - `term_statistics` (optional): set true to return term statistics (default is false)
-    - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/clueweb12-0000tw-07-01629/_termvectors?term_statistics=true`
+    - E.g. `http://gustav1.ux.uis.no:5002/clueweb12b/clueweb12-0209wb-65-17913/_termvectors?term_statistics=true`
     - NOTE: do not use the termvectors request to check if a document exists in the index. Use the exists endpoint instead (see next).
   * **Exists**: `/<indexname>/<docid>/_exists`
     - Returns whether the given document ID exists in that index using [es.exists()](https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.exists)
