@@ -1,7 +1,7 @@
 # Assignment 3
 
 **Updates (most recent first):**
-  - Caching has been added to the API. Getting search results and termvectors should be much faster from now on. 
+  - Caching has been added to the API. Getting search results and termvectors should be much faster from now on.
   - [Slides](https://speakerdeck.com/kbalog/2017-learning-to-rank) have been updated with specific feature suggestions. The notebook for Part 3 is [available here.](3_LTR.ipynb).
   - LM scoring code has been shared in the [LM_scoring.ipynb](LM_scoring.ipynb) notebook.
   - Two new API requests have been added: (1) `exists` for checking if a given document exists in the index (instead of using `termvectors` for that) and (2) `analyze` for tokenizing the query for custom retrieval.
@@ -45,7 +45,8 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
 
   - Design and implement additional features to maximize retrieval performance.
       - Add minimum 2 query and minimum 2 document features (see lecture slides for suggestions).
-      - PageRank scores for the ClueWeb collection are [available here](http://www.lemurproject.org/clueweb12/PageRank.php).
+      - PageRank scores for the ClueWeb collection are [available here](http://www.lemurproject.org/clueweb12/PageRank.php). Specifically, since the work with the "Category B" subset, the ones the "ClueWeb12-B13 PageRank" heading are to be used.
+      - Note: you *don't have to* use PageRank as a feature. If you want, you can take PageRank scores from one of these files (and you need to figure out the file format yourself; but really, it is not that complicated).
   - Learn a model on the given training data (i.e., using `data/queries.txt` and `data/qrels.csv`) and apply that model on the set of "unseen" queries in `data/queries2.txt`.
   - A notebook is provided for Part 3 that contains the main logic and only needs the additional features to be implemented.
       - The notebook is called [3_LTR.ipynb](3_LTR.ipynb). *It'll soon be pushed to the private repos. For now, you can get it from [this link](3_LTR.ipynb).*
@@ -174,8 +175,11 @@ The API may be extended over time with additional functionality, should the need
   * **Should we use binary target labels (i.e., target=1 if rel>0 and target=0 if rel<=0)?** No. Use the relevance labels directly as target values. We are treating it as a regression problem, not as a binary classification task.
   * **Is it possible to query the API using different similarity methods?** No. As the index would need to be closed and re-opened after each such change, it would reduce the throughput of the API too much.
   * **Will it not be a lot of work for us then to implement another retrieval method?** You should have the LM implementation from Assignment 1 that you can reuse.  We also made our LM implementation available [here](LM_scoring.ipynb). You may also choose a simpler similarity function, e.g., TF-IDF or even just TF or IDF.
-  * **How to check if a given document that we retrieve from the anchors text index exists in ClueWeb Category B?** A separate `exists` request has been introduced for that. Do not use `termvectors`, as that is too slow. Only use `termvectors` when computing the retrieval scores for a given document.
   * **I'm getting a lower NDCG score for the baselines than what I'm supposed to.** Make sure you treat relevance=-2 as relevance=0 when computing NDCG.
+  * **Do we need to use the PageRank scores from that link?** No. It's up to you. If you want, you can use them. What matters is that you implement at least 2 document features.
+  * **How to check if a given document that we retrieve from the anchors text index exists in ClueWeb Category B?** A separate `exists` request has been introduced for that. Do not use `termvectors`, as that is too slow. Only use `termvectors` when computing the retrieval scores for a given document.
+  * **How many documents to retrieve for the anchors-only baseline?** You need to figure it out. For some queries, you might need to retrieve up to 1000 or 2000 docs to find 20 that exist in the `clueweb12b` index. For other queries, it could be much less.
+  * **Running the experiments takes a lot of time.** If you request all the data from the API each time you make a change or try to add a new feature, then yes, it'll take a very long time. You should compute individual features only once and store these somewhere (e.g., text or json files).
 
 
 ## General FAQ
