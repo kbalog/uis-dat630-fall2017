@@ -46,7 +46,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
 
   - Design and implement additional features to maximize retrieval performance.
       - Add minimum 2 query and minimum 2 document features (see lecture slides for suggestions).
-      - PageRank scores for the ClueWeb collection are [available here](http://www.lemurproject.org/clueweb12/PageRank.php). Specifically, since the work with the "Category B" subset, the ones the "ClueWeb12-B13 PageRank" heading are to be used.
+      - PageRank scores for the ClueWeb collection are [available here](http://www.lemurproject.org/clueweb12/PageRank.php). Specifically, since the work with the "Category B" subset, the files under the "ClueWeb12-B13 PageRank" heading are to be used.
       - Note: you *don't have to* use PageRank as a feature. If you want, you can take PageRank scores from one of these files (and you need to figure out the file format yourself; but really, it is not that complicated).
   - Learn a model on the given training data (i.e., using `data/queries.txt` and `data/qrels.csv`) and apply that model on the set of "unseen" queries in `data/queries2.txt`.
   - A notebook is provided for Part 3 that contains the main logic and only needs the additional features to be implemented.
