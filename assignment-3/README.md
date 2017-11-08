@@ -44,6 +44,8 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Design and implement additional features to maximize retrieval performance.
       - Add minimum 2 query and minimum 2 document features.
   - Learn a model on the given training data (i.e., using `data/queries.txt` and `data/qrels.csv`) and apply that model on the set of "unseen" queries in `data/queries2.txt`.
+  - A notebook is provided for Part 3 that contains the main logic and only needs the additional features to be implemented.
+      - The notebook is called [3_LTR.ipynb](3_LTR.ipynb). *It'll soon be pushed to the private repos. For now, you can get it from [this link](3_LTR.ipynb).*
   - You need to submit the generated ranking on Kaggle and reach a minimum NDCG@20 score.
       - *The kaggle link and the minimum NDCG@20 score will be provided here.*
   - Additionally, the best performing team will be awarded with bonus points.
