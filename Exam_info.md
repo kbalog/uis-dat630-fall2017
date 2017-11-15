@@ -84,8 +84,8 @@ Motto: "everything from the lectures and practicums"
         * Issues, limitations
     - Hierarchical agglomerative clustering
   * Locality sensitive hashing
-  * Frequent itemsets and association rule mining
-    - A-Priori, SON, PCY algorithms
+  * ~~Frequent itemsets and association rule mining~~
+    - ~~A-Priori, SON, PCY algorithms~~
 
 
 ### Information Retrieval
@@ -113,7 +113,7 @@ Motto: "everything from the lectures and practicums"
   * Learning-to-rank
     - Difference between pointwise, pairwise, listwise methods
     - Types of features (query, document, query-document)
-  * Semantic search
-    - Knowledge bases, RDF, DBpedia
-    - Entity retrieval
-    - Entity linking
+  * ~~Semantic search~~
+    - ~~Knowledge bases, RDF, DBpedia~~
+    - ~~Entity retrieval~~
+    - ~~Entity linking~~
