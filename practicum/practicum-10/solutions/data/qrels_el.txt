@@ -1,0 +1,40 @@
+TREC-1	
+TREC-10	<dbpedia:California>
+TREC-11	<dbpedia:Cass_County,_Missouri>
+TREC-12	
+TREC-13	<dbpedia:Condominium>
+TREC-13	<dbpedia:Florida>
+TREC-15	
+TREC-17	<dbpedia:Discovery_Channel>
+TREC-17	<dbpedia:Discovery_Channel_(Canada)>
+TREC-18	
+TREC-19	
+TREC-22	<dbpedia:East_Ridge_High_School_(Minnesota)>
+TREC-22	<dbpedia:East_Ridge_High_School_(Florida)>
+TREC-22	<dbpedia:East_Ridge_High_School_(Kentucky)>
+TREC-23	
+TREC-24	
+TREC-25	<dbpedia:ER_(TV_series)>
+TREC-26	
+TREC-27	
+TREC-28	<dbpedia:French_Lick_Resort_Casino>
+TREC-29	
+TREC-31	
+TREC-32	
+TREC-54	<dbpedia:Mother's_Day>
+TREC-55	<dbpedia:Barack_Obama>
+TREC-56	<dbpedia:Orange_County_Convention_Center>
+TREC-59	
+TREC-75	<dbpedia:The_Secret_Garden_(1949_film)>
+TREC-75	<dbpedia:The_Secret_Garden_(1993_film)>
+TREC-75	<dbpedia:The_Secret_Garden_(1987_film)>
+TREC-75	<dbpedia:The_Secret_Garden_(musical)>
+TREC-75	<dbpedia:The_Secret_Garden>
+TREC-76	<dbpedia:Tennessee>
+TREC-76	<dbpedia:Highway_Patrol_(TV_series)>
+TREC-81	<dbpedia:University_of_Phoenix>
+TREC-82	<dbpedia:Yellowstone_National_Park>
+TREC-85	<dbpedia:USS_Yorktown_(CV-10)>
+TREC-85	<dbpedia:Charleston,_South_Carolina>
+TREC-86	<dbpedia:Virginia_Department_of_Motor_Vehicles>
+TREC-91	

@@ -1,0 +1,30 @@
+TREC-1	adobe indian houses
+TREC-10	california franchise tax board
+TREC-11	cass county missouri
+TREC-12	civil right movement
+TREC-13	condos in florida
+TREC-15	dangers of asbestos
+TREC-17	discovery channel store
+TREC-18	dog clean up bags
+TREC-19	dogs for adoption
+TREC-22	east ridge high school
+TREC-23	electronic skeet shoot
+TREC-24	equal opportunity employer
+TREC-25	er tv show
+TREC-26	fact on uranus
+TREC-27	fickle creek farm
+TREC-28	french lick resort and casino
+TREC-29	furniture for small spaces
+TREC-31	gs pay rate
+TREC-32	how to build a fence
+TREC-54	mothers day songs
+TREC-55	obama family tree
+TREC-56	orange county convention center
+TREC-59	president of the united states
+TREC-75	the secret garden
+TREC-76	tn highway patrol
+TREC-81	university of phoenix
+TREC-82	uplift at yellowstone national park
+TREC-85	uss yorktown charleston sc
+TREC-86	va dmv registration
+TREC-91	who invented music

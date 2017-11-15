@@ -1,0 +1,30 @@
+INEX_LD-2009039	roman architecture
+INEX_LD-2009053	finland car industry manufacturer saab sisu
+INEX_LD-2009061	france second world war normandy
+INEX_LD-2010057	Einstein Relativity theory
+INEX_LD-2010069	summer flowers
+INEX_LD-2010106	organic food advantages disadvantages
+INEX_LD-2012301	Niagara falls origin lake
+INEX_XER-62	Neil Gaiman novels
+INEX_XER-119	Swiss cantons they speak German
+INEX_XER-121	US presidents since 1960
+INEX_XER-114	Formula one races in Europe
+INEX_XER-133	EU countries
+INEX_XER-138	National Parks East Coast Canada US
+QALD2_te-3	is the mayor of Berlin
+QALD2_tr-1	all female Russian astronauts
+QALD2_tr-21	states border Illinois
+QALD2_tr-59	all people with first name Jimmy
+QALD2_tr-41	all soccer clubs in Spain
+SemSearch_ES-19	carl lewis
+SemSearch_ES-33	harry potter
+SemSearch_ES-34	harry potter movie
+SemSearch_ES-14	ben franklin
+SemSearch_ES-78	sharp pc
+SemSearch_LS-8	continents in the world
+SemSearch_LS-29	nations where Portuguese is an official language
+SemSearch_LS-33	provinces and territories of Canada
+SemSearch_LS-34	ratt albums
+SemSearch_LS-42	twelve tribes or sons of Israel
+TREC_Entity-6	Organizations that award Nobel prizes
+TREC_Entity-7	Airlines that currently use Boeing 747 planes

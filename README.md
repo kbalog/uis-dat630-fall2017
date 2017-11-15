@@ -27,7 +27,7 @@
 | 43 | 23-25/10 | Web search ([slides](https://speakerdeck.com/kbalog/2017-web-search), [exercises](exercises/lecture-11)) | [Practicum-8](practicum/practicum-8) | [Assignment 3](assignment-3/) | SE, Sections 3.2, 4.5 |
 | 44 | 30-31/10 | Learning-to-rank ([slides](https://speakerdeck.com/kbalog/2017-learning-to-rank)) | [Practicum-9](practicum/practicum-9) | [Assignment 3](assignment-3/) | |
 | 45 | 06-08/11 | Trial exam Part I | Trial exam Part II | [Assignment 3](assignment-3/) | |
-| 46 | 13-14/11 | Semantic search ([slides](https://speakerdeck.com/kbalog/2017-semantic-search-part-i)) | Practicum-10 | Final Q&A | |
+| 46 | 13-14/11 | Semantic search ([slides1](https://speakerdeck.com/kbalog/2017-semantic-search-part-i), [slides2](https://speakerdeck.com/kbalog/2017-semantic-search-part-ii)) | [Practicum-10](practicum/practicum-10) | Final Q&A | |
 
 
 ## Assignment deadlines
