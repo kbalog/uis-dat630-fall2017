@@ -1,14 +1,5 @@
 # Assignment 3
 
-**Updates (most recent first):**
-  - The [Kaggle competition](https://www.kaggle.com/t/408f3cbd43e0494da0426b2fb441bab2) has been launched. The minimum NDCG@20 score to reach for passing this assignment has been (very generously) set to 0.1.
-  - Caching has been added to the API. Getting search results and termvectors should be much faster from now on.
-  - [Slides](https://speakerdeck.com/kbalog/2017-learning-to-rank) have been updated with specific feature suggestions. The notebook for Part 3 is [available here.](3_LTR.ipynb).
-  - LM scoring code has been shared in the [LM_scoring.ipynb](LM_scoring.ipynb) notebook.
-  - Two new API requests have been added: (1) `exists` for checking if a given document exists in the index (instead of using `termvectors` for that) and (2) `analyze` for tokenizing the query for custom retrieval.
-  - It's enough to output top-20 results (was 100 before).
-  - The indices are final. We posted the NDCG@10 scores that you should get for the baseline methods.
-
 The task is to implement methods for web search and evaluate them using a standard test collection.
 
 The assignment consists of three main parts.
@@ -51,7 +42,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Learn a model on the given training data (i.e., using `data/queries.txt` and `data/qrels.csv`) and apply that model on the set of "unseen" queries in `data/queries2.txt`.
   - A notebook is provided for Part 3 that contains the main logic and only needs the additional features to be implemented.
       - The notebook is called [3_LTR.ipynb](3_LTR.ipynb). *It'll soon be pushed to the private repos. For now, you can get it from [this link](3_LTR.ipynb).*
-  - You need to submit the generated ranking on Kaggle and **reach a minimum NDCG@20 score of 0.1**.
+  - You need to submit the generated ranking on Kaggle ~~and **reach a minimum NDCG@20 score of 0.1**~~.
       - The Kaggle competition is available here: [https://www.kaggle.com/t/408f3cbd43e0494da0426b2fb441bab2](https://www.kaggle.com/t/408f3cbd43e0494da0426b2fb441bab2)
   - Additionally, the best performing team will be awarded with 5 bonus points (each member).
 
