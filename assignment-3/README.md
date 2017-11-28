@@ -27,7 +27,7 @@ For each part a skeleton of the code are provided as Jupyter notebooks. These no
   - Perform baseline (BM25) retrieval on a separate anchor text index.
       - The anchor text index (called `clueweb12b_anchors`) can be accessed the same way as the regular document index. See [below](#search-api).
       - Note that the anchor text index covers the entire ClueWeb collection, not just the Category B subset. I.e., you need to ignore documents that are not present in the regular index.
-      - The anchor text index should give an NDCG@10 score of 0.105
+      - The anchor text index should give an NDCG@10 score of about 0.14
   - Test your model using 5-fold cross-validation on the given training data (queries and relevance judgments, i.e., `data/queries.txt` and `data/qrels.csv`).
   - No notebook is provided for this part of the assignment.
       - Use the [code from Practicum 9](https://github.com/kbalog/uis-dat630-fall2017/tree/master/practicum/practicum-9/solutions) as your starting point.
