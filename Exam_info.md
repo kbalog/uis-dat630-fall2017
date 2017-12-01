@@ -15,7 +15,7 @@
      - Any files you previously downloaded (PDFs, slides, MS Excel files, python code, etc.)
      - Programs that are installed on your PC
   * **No online resources**
-  * *Note: Slides will be made available in PDF format for download*
+  * Slides are made available in PDF format for download [here](slides/)
 
 ### Grading
 
